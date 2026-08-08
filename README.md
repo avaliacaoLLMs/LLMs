@@ -67,3 +67,15 @@ O processo experimental foi organizado em 7 etapas principais:
 │   └── generate_tables.py     # Processamento dos dados e geração das tabelas
 ├── requirements.txt           # Dependências do projeto Python
 └── README.md                  # Documentação do projeto
+
+## 🚀 Como Reproduzir os Experimentos
+
+Siga os passos abaixo para preparar o ambiente, baixar os modelos e executar a coleta de dados completa.
+
+---
+
+### Passo 1: Instalação do Ollama
+Instale a plataforma Ollama no seu ambiente Linux para gerenciar o carregamento e a inferência dos modelos:
+
+```bash
+curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
