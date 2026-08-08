@@ -55,7 +55,7 @@ O processo experimental foi organizado em 7 etapas principais:
 ---
 
 ## 📂 Estrutura do Repositório
-``text
+```text
 ├── data/
 │   ├── prompts.json           # Base de dados com as 10.000 perguntas
 │   └── raw_results/           # Logs e saídas brutas obtidas nos testes
@@ -67,7 +67,7 @@ O processo experimental foi organizado em 7 etapas principais:
 │   └── generate_tables.py     # Processamento dos dados e geração das tabelas
 ├── requirements.txt           # Dependências do projeto Python
 └── README.md                  # Documentação do projeto
-
+```
 ---
 ## 🚀 Como Reproduzir os Experimentos
 
@@ -80,3 +80,17 @@ Instale a plataforma Ollama no seu ambiente Linux para gerenciar o carregamento 
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
+```
+---
+
+### Passo 2: Download dos Modelos
+Faça o download de todos os cinco modelos avaliados no estudo diretamente pelo terminal:
+
+```
+ollama pull llama3:8b
+ollama pull qwen2:7b
+ollama pull gemma3:4b
+ollama pull phi3.5
+ollama pull deepseek-r1:8b
+```
+---
