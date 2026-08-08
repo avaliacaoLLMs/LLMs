@@ -55,7 +55,7 @@ O processo experimental foi organizado em 7 etapas principais:
 ---
 
 ## 📂 Estrutura do Repositório
-```text
+```
 ├── data/
 │   ├── prompts.json           # Base de dados com as 10.000 perguntas
 │   └── raw_results/           # Logs e saídas brutas obtidas nos testes
@@ -78,7 +78,7 @@ Siga os passos abaixo para preparar o ambiente, baixar os modelos e executar a c
 ### Passo 1: Instalação do Ollama
 Instale a plataforma Ollama no seu ambiente Linux para gerenciar o carregamento e a inferência dos modelos:
 
-```bash
+```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 ---
@@ -94,3 +94,28 @@ ollama pull phi3.5
 ollama pull deepseek-r1:8b
 ```
 ---
+### Passo 3: Clonar o Repositório e Criar o Ambiente Virtual (venv)
+
+1. Clone o repositório para a sua máquina local e acesse a pasta do projeto:
+```
+git clone https://github.com/avaliacaoLLMs/LLMs.git
+cd LLMs
+```
+---
+
+## Para rodar na maquina: 
+---
+1. Crie o ambiente virtual (venv) : 
+```
+python3 -m venv venv
+```
+---
+2. Ative o ambiente virtual :
+```
+source venv/bin/activate
+```
+---
+3. Instale as dependências no ambiente virtual ativo :
+```
+pip install -r requirements.txt
+```
