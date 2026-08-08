@@ -102,20 +102,33 @@ git clone https://github.com/avaliacaoLLMs/LLMs.git
 cd LLMs
 ```
 ---
-
-## Para rodar na maquina: 
----
-1. Crie o ambiente virtual (venv) : 
+2. Crie o ambiente virtual (venv) : 
 ```
 python3 -m venv venv
 ```
 ---
-2. Ative o ambiente virtual :
+3. Ative o ambiente virtual :
 ```
 source venv/bin/activate
 ```
 ---
-3. Instale as dependências no ambiente virtual ativo :
+4. Instale as dependências no ambiente virtual ativo :
 ```
 pip install -r requirements.txt
 ```
+5. Execução do Experimento
+```
+python experimento.py
+```
+
+
+
+
+
+
+
+
+
+
+
+                   
