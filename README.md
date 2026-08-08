@@ -55,7 +55,7 @@ O processo experimental foi organizado em 7 etapas principais:
 ---
 
 ## 📂 Estrutura do Repositório
-
+```text
 ├── data/
 │   ├── prompts.json           # Base de dados com as 10.000 perguntas
 │   └── raw_results/           # Logs e saídas brutas obtidas nos testes
