@@ -12,7 +12,7 @@ A execução local de LLMs oferece privacidade e autonomia, porém impõe custos
 
 - **Desempenho Operacional:** Tempo de resposta, latência média por pergunta e taxa de geração de tokens (tokens/segundo).
 - **Recursos de Hardware:** Uso do pico de CPU (%), memória RAM (GB) e operações de leitura/escrita em disco (MB).
-- **Impacto Ambiental:** Consumo energético total (Wh) da CPU/GPU e estimativa de emissões de $\text{CO}_2$ (g$\text{CO}_2$ e g$\text{CO}_2$/1k tokens) via CodeCarbon.
+- **Impacto Ambiental:** Consumo energético total (Wh) da CPU/GPU e estimativa de emissões de CO₂ (gCO₂ e gCO₂/1k tokens) via CodeCarbon.
 - **Custo Financeiro:** Conversão do consumo elétrico em custo monetário local (R$/kWh e R$/1k tokens).
 
 ---
@@ -21,13 +21,14 @@ A execução local de LLMs oferece privacidade e autonomia, porém impõe custos
 
 Todos os modelos foram executados via plataforma **Ollama** sob configurações padronizadas:
 
-| Modelo | Parâmetros | Descrição / Foco |
-| :--- | :---: | :--- |
-| **Llama-3** | 8B | Modelo aberto de uso geral de alto desempenho |
-| **Qwen2** | 7B | Modelo multilíngue otimizado |
-| **Gemma3** | 4B | Arquitetura leve com alto volume de geração por resposta |
-| **Phi-3.5** | 3.8B | Modelo compacto focado em eficiência |
-| **DeepSeek-R1** | 8B | Modelo focado em raciocínio e tarefas estruturadas |
+| Modelo          | Parâmetros | Descrição / Foco                                          |
+| :-------------- | :--------: | :-------------------------------------------------------- |
+| **Llama-3**     |     8B     | Modelo aberto de uso geral de alto desempenho             |
+| **Qwen2**       |     7B     | Modelo multilíngue otimizado                              |
+| **Gemma3**      |     4B     | Arquitetura leve com alto volume de geração por resposta |
+| **Phi-3.5**     |    3.8B    | Modelo compacto focado em eficiência                      |
+| **DeepSeek-R1** |     8B     | Modelo focado em raciocínio e tarefas estruturadas        |
+| **Mistral 7B**  |     7B     | Modelo aberto otimizado para eficiência e desempenho      |
 
 ---
 
@@ -36,8 +37,8 @@ Todos os modelos foram executados via plataforma **Ollama** sob configurações 
 O processo experimental foi organizado em 7 etapas principais:
 
 1. **Definição do Ambiente:** Configuração do sistema operacional Linux, isolamento de processos secundários e preparação do ambiente de monitoramento.
-2. **Seleção dos Modelos:** Escolha de 5 LLMs com diferentes volumes de parâmetros e características de treinamento.
-3. **Elaboração e Aplicação da Base:** Submissão idêntica de uma base contendo **10.000 perguntas** abrangendo variados tópicos, extensões e níveis de complexidade.
+2. **Seleção dos Modelos:** Escolha de 6 LLMs com diferentes volumes de parâmetros e características de treinamento.
+3. **Elaboração e Aplicação da Base:** Submissão idêntica de uma base contendo **10.000 perguntas** abrangendo variados tópicos, extensões e níveis de complexidade. Retiradas do repositório : https://huggingface.co/datasets/dominguesm/Canarim-Instruct-PTBR-Dataset
 4. **Execução e Coleta de Dados:** Automação do envio via API/Ollama com registro de logs de CPU, RAM, I/O e métricas de inferência.
 5. **Mensuração Ambiental:** Monitoramento do consumo energético em Wh (CPU e GPU) e cálculo do $g\text{CO}_2$ associado utilizando o CodeCarbon.
 6. **Cálculo Financeiro:** Conversão da energia consumida (kWh) para valor monetário com base na tarifa regional estipulada (R$ 0,88 / kWh).
