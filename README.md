@@ -92,6 +92,7 @@ ollama pull qwen2:7b
 ollama pull gemma3:4b
 ollama pull phi3.5
 ollama pull deepseek-r1:8b
+ollama pull mistral
 ```
 ---
 ### Passo 3: Clonar o Repositório e Criar o Ambiente Virtual (venv)
