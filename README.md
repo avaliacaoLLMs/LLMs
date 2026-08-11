@@ -38,11 +38,12 @@ O processo experimental foi organizado em 7 etapas principais:
 
 1. **Definição do Ambiente:** Configuração do sistema operacional Linux, isolamento de processos secundários e preparação do ambiente de monitoramento.
 2. **Seleção dos Modelos:** Escolha de 6 LLMs com diferentes volumes de parâmetros e características de treinamento.
-3. **Elaboração e Aplicação da Base:** Submissão idêntica de uma base contendo **10.000 perguntas** abrangendo variados tópicos, extensões e níveis de complexidade. Retiradas do repositório : https://huggingface.co/datasets/dominguesm/Canarim-Instruct-PTBR-Dataset
-4. **Execução e Coleta de Dados:** Automação do envio via API/Ollama com registro de logs de CPU, RAM, I/O e métricas de inferência.
-5. **Mensuração Ambiental:** Monitoramento do consumo energético em Wh (CPU e GPU) e cálculo do $g\text{CO}_2$ associado utilizando o CodeCarbon.
-6. **Cálculo Financeiro:** Conversão da energia consumida (kWh) para valor monetário com base na tarifa regional estipulada (R$ 0,88 / kWh).
-7. **Análise Comparativa:** Consolidação das métricas para avaliação do *trade-off* entre desempenho, custo e pegada de carbono.
+3. **Elaboração e Aplicação da Base:** Submissão idêntica de uma base contendo **10.000 perguntas** abrangendo variados tópicos, extensões e níveis de complexidade.
+   Retiradas do repositório : https://huggingface.co/datasets/dominguesm/Canarim-Instruct-PTBR-Dataset
+5. **Execução e Coleta de Dados:** Automação do envio via API/Ollama com registro de logs de CPU, RAM, I/O e métricas de inferência.
+6. **Mensuração Ambiental:** Monitoramento do consumo energético em Wh (CPU e GPU) e cálculo do $g\text{CO}_2$ associado utilizando o CodeCarbon.
+7. **Cálculo Financeiro:** Conversão da energia consumida (kWh) para valor monetário com base na tarifa regional estipulada (R$ 0,88 / kWh).
+8. **Análise Comparativa:** Consolidação das métricas para avaliação do *trade-off* entre desempenho, custo e pegada de carbono.
 
 ---
 
